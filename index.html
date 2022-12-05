@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PacMan Survival</h1>
+    <div id='start-screen' class='screen' style='display:block;text-align:center;'>
+        <button style="margin-top: 150px;" id="startGameBtn">Start Game</button>
+    </div>
+
+    <div style="min-height: 100%">
+    <p id="score-display" style="color: yellow; font-family:sans-serif; font-size: 20px; margin-bottom: 6px; display: none; text-align: center;">
+        <span>Lives: </span><span id="scoreEl" >0</span>
+    </p>
+    </div>
+
+    <div  style='text-align: center; margin: 10px'>
+        <button style='text-align:center; display:none; margin: 0 auto; font-size: 1.0em; width: 200px;'
+        id="restartBtn" onClick="document.location.reload(true)">Restart</button>
+    </div>
+
+    <div style="text-align: center;">
+    <canvas></canvas>
+    </div>
+
+    <div id="winner1-screen" class="screen" style="display:none;">
+        <h2 class="neonText">You Win!</h2>
+        <h3>Player 1</h3>
+        <img class="win" src="./img/win-g084303bcb_1280.png">
+    </div>
+
+    <div id="winner2-screen" class="screen" style="display:none;">
+        <h2 class="neonText">You Win!</h2>
+        <h3>Player 2</h3>
+        <img class="win" src="./img/win-g084303bcb_1280.png">     
+    </div>
+
+
+
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Pacfont-ZEBZ.ttf">
+</body>
+</html>
